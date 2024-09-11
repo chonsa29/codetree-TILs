@@ -9,7 +9,7 @@ int main() {
     int n;
     cin >> n;
 
-    if(n%2 == 0 && sum(n)%10 == 0) cout << "Yes";
+    if(n%2 == 0 && sum(n)%5 == 0) cout << "Yes";
     else cout <<"No";
     return 0;
 }
