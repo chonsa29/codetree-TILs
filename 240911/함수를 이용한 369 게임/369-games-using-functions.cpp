@@ -12,6 +12,7 @@ bool find(int a) {
     int h = a / 10000;
     int i = a % 100000;
     int j = a / 100000;
+    int k = a % 1000000;
     if (one == 3 || one == 6 || one == 9) return true;
     else if (ten == 3 || ten == 6 || ten == 9) return true;
     else if (c == 3 || c == 6 || c == 9) return true;
@@ -22,7 +23,7 @@ bool find(int a) {
     else if (h == 3 || h == 6 || h == 9) return true;
     else if (i == 3 || i == 6 || i == 9) return true;
     else if (j == 3 || j == 6 || j == 9) return true;
-
+    else if (k == 3 || k == 6 || k == 9) return true;
     else return false;
 }
 
