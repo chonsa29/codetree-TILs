@@ -28,7 +28,7 @@ int main() {
         cout << a <<" " << o <<" "<< b << " = " << add(a, b);
     }
 
-    else if (o == ' - ') {
+    else if (o == '-') {
         cout << a << " " << o << " "<< b << " = " << sub(a, b);
     }
 
