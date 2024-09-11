@@ -39,5 +39,6 @@ int main() {
     else if (o == '/') {
         cout << a << " " << o << " " << b << " = " << dev(a, b);
     }
+    else cout << "false";
     return 0;
 }
