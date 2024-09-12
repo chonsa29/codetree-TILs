@@ -11,8 +11,9 @@ string a(vector <int> v1, vector <int> v2) {
         
         if (v1[i] == v2[0]) {
             for (int j = 0;j < v2.size();j++) {
-                if (v1[i + j] == v2[j]) cnt++;
                 if (cnt == v2.size()) break;
+                if (v1[i + j] == v2[j]) cnt++;
+         
             }
         }
     }
