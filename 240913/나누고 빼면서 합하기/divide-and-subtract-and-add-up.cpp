@@ -11,7 +11,7 @@ int add(int a) {
     while (a != 1) {
         sum = sum + arr[a-1];
         if (a % 2 == 0) a = a / 2;
-        else a = a + 1;
+        else a = a - 1;
     }
     sum = sum + arr[0];
     return sum;
