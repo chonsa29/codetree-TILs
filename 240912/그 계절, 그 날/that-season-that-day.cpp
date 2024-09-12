@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
@@ -32,7 +31,7 @@ string s(int a, int b, int c) {
         if (b == 3 || b == 4 || b == 5) return "Spring";
         else if (b == 6 || b == 7 || b == 8) return "Summer";
         else if (b == 9 || b == 10 || b == 11) return "Fall";
-        else return "Winter";
+        else if(b==12 || b == 1 || b ==2 ) return "Winter";
         
     }
 }
