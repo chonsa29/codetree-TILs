@@ -3,8 +3,8 @@
 using namespace std;
 
 string s(int a, int b, int c) {
-    if (a % 4 == 0) { //윤년인 경우 ,4의 배수이면서
-        if (a % 100 != 0 || a % 400 == 0) { //100의 배수가 아니거나 400의 배수인 경우
+    if (a % 4 == 0 && a% 100 !=0 || a%400 == 0) { //윤년인 경우 ,4의 배수이면서
+       
             if ( b == 4 || b == 6 || b == 9 || b == 11) { // 4,6,9,11월 
                 if (c > 30) return "-1"; //30일이 넘으면 -1
             }
@@ -17,7 +17,7 @@ string s(int a, int b, int c) {
             else if (b == 9 || b == 10 || b == 11) return "Fall";
             else return "Winter";
             
-        }
+        
     }
 
     else { //윤년이 아닌 경우
@@ -38,8 +38,10 @@ string s(int a, int b, int c) {
 int main() {
     // 여기에 코드를 작성해주세요.
     int Y, M, D;
-    cin >> Y >> M >> D;
+    
+        cin >> Y >> M >> D;
 
-    cout << s(Y, M, D);
+        cout << s(Y, M, D) << endl;
+   
     return 0;
 }
