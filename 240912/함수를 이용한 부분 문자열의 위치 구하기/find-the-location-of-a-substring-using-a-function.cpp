@@ -14,6 +14,7 @@ int compare(string s1, string s2) {
                 if (s1[i + j] == s2[j]) cnt++;
             }
             if (cnt == s2.size()) return i;
+            cnt = 0;
         }
     }
     return -1;
